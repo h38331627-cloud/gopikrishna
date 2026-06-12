@@ -1,193 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>RAHUL TOSS FIXER</title>
-
-<!-- META PIXEL -->
-<script>
-!function(f,b,e,v,n,t,s){
-if(f.fbq)return;n=f.fbq=function(){
-n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)
-}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '1265282839024084');
-fbq('track', 'PageView');
-fbq('track', 'ViewContent');
-</script>
-
-<script src="https://cdn.tailwindcss.com"></script>
+<title>Cricket Daily Updates</title>
 
 <style>
-body{
+*{
 margin:0;
-font-family:sans-serif;
-background:linear-gradient(to bottom,#020617,#0f172a);
-color:white;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
 
-/* FULL SCREEN */
-.main{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-padding:20px;
+body{
+background:#0d1117;
+color:#fff;
+overflow-x:hidden;
 }
 
-/* TITLE */
-.title{
-font-size:28px;
-font-weight:900;
-color:#facc15;
-text-align:center;
-}
-
-/* CARD */
-.card{
-background:#111827;
-padding:20px;
-border-radius:16px;
-text-align:center;
-margin-top:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.5);
-}
-
-/* BUTTON */
-.btn{
-display:block;
+.container{
 width:100%;
-padding:16px;
-border-radius:12px;
-font-weight:bold;
-text-align:center;
-margin-top:15px;
-transition:0.2s;
+max-width:430px;
+margin:auto;
+min-height:100vh;
+background:linear-gradient(180deg,#071426,#0d1117);
 }
 
-.btn1{ background:#22c55e; }
-.btn2{ background:#2563eb; }
+.top{
+background:linear-gradient(90deg,#FFD700,#FF6B00);
+text-align:center;
+padding:14px;
+font-weight:bold;
+font-size:22px;
+color:#000;
+box-shadow:0 0 20px #FFD700;
+}
 
-.btn:hover{
+.hero{
+padding:25px;
+text-align:center;
+}
+
+.hero h1{
+font-size:32px;
+margin-bottom:10px;
+color:#00ffae;
+}
+
+.hero p{
+font-size:15px;
+color:#ddd;
+line-height:1.5;
+}
+
+.telegram-btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 30px;
+background:#0088cc;
+color:white;
+text-decoration:none;
+font-weight:bold;
+border-radius:50px;
+box-shadow:0 0 20px #0088cc;
+transition:0.3s;
+}
+
+.telegram-btn:hover{
 transform:scale(1.05);
 }
 
-/* BADGE */
-.badge{
-background:#ef4444;
-padding:5px 10px;
-border-radius:20px;
-font-size:12px;
-display:inline-block;
-margin-top:8px;
+.section{
+padding:18px;
 }
 
-/* DISCLAIMER */
-.disclaimer{
-font-size:11px;
-color:#9ca3af;
+.card{
+background:#161b22;
+padding:18px;
+margin-bottom:15px;
+border-radius:15px;
+border:1px solid #30363d;
+box-shadow:0 0 10px rgba(255,255,255,.08);
+}
+
+.card h2{
+color:#00ffae;
+margin-bottom:10px;
+font-size:20px;
+}
+
+.card ul{
+padding-left:18px;
+}
+
+.card li{
+margin-bottom:8px;
+}
+
+.community{
+background:linear-gradient(135deg,#00ffae,#00b4ff);
+padding:20px;
+border-radius:20px;
 text-align:center;
-margin-top:15px;
-line-height:1.4;
+color:#000;
+font-weight:bold;
+}
+
+.footer{
+text-align:center;
+padding:20px;
+color:#999;
+font-size:13px;
+}
+
+.floating-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#0088cc;
+color:#fff;
+padding:14px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 15px #0088cc;
 }
 </style>
-
 </head>
 
 <body>
 
-<div class="main">
+<div class="container">
 
-<!-- TOP -->
-<div>
-<h1 class="title">RAHUL TOSS FIXER</h1>
-
-<div class="text-center mt-2">
-<span class="badge">🔥 LIMITED ACCESS</span>
+<div class="top">
+🔥 POWERED BY GOPI KRISHNA 🔥
 </div>
 
-<div class="text-center mt-3 text-lg">
-⏳ Join Fast: <span id="countdown" class="text-yellow-300 font-bold">30</span>s
+<div class="hero">
+<h1>🏏 CRICKET DAILY UPDATES</h1>
+<p>
+Daily Match Schedule • Toss Updates • Match Reports • Session Reports • Cricket Community
+</p>
+
+<a href="https://t.me/+ZhjDD19fHVswYmI1" class="telegram-btn">
+📢 JOIN TELEGRAM
+</a>
+</div>
+
+<div class="section">
+
+<div class="card">
+<h2>📅 Daily Match Schedule</h2>
+<ul>
+<li>International Cricket Fixtures</li>
+<li>T20 League Matches</li>
+<li>ODI Match Schedule</li>
+<li>Test Match Updates</li>
+</ul>
 </div>
 
 <div class="card">
-<p class="text-lg font-semibold">📢 Daily Toss Updates</p>
-<p class="text-sm mt-2">High Accuracy • Instant Access 👇</p>
+<h2>🪙 Toss Updates</h2>
+<ul>
+<li>Live Toss Result</li>
+<li>Pitch Report Analysis</li>
+<li>Weather Conditions</li>
+<li>Toss Winning Trends</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>📊 Match Reports</h2>
+<ul>
+<li>Pre Match Analysis</li>
+<li>Playing XI News</li>
+<li>Match Insights</li>
+<li>Post Match Report</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>💰 Session Reports</h2>
+<ul>
+<li>Powerplay Session</li>
+<li>First Innings Session</li>
+<li>Second Innings Session</li>
+<li>Over By Over Insights</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>🔥 Cricket Community</h2>
+<div class="community">
+Join Cricket Lovers Community<br><br>
+Match Discussion • Team News • Live Updates • Expert Analysis
 </div>
 </div>
 
-<!-- BUTTONS -->
-<div>
+<div class="card" style="text-align:center;">
+<h2>🚀 Join Telegram Channel</h2>
 
-<a href="https://t.me/+BZMHSu-IhjFlZjll" id="btn1">
-<div class="btn btn1">JOIN NOW 🚀</div>
+<a href="https://t.me/+ZhjDD19fHVswYmI1" class="telegram-btn">
+JOIN NOW
 </a>
 
-<a href="https://t.me/+BZMHSu-IhjFlZjll" id="btn2">
-<div class="btn btn2">GET ACCESS ⚡</div>
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 Cricket Daily Updates | Powered By Gopi Krishna
+</div>
+
+</div>
+
+<a href="https://t.me/+ZhjDD19fHVswYmI1" class="floating-btn">
+📢 Join
 </a>
-
-<p class="disclaimer">
-⚠️ This page is for informational purposes only.  
-We do not guarantee any results, profits, or accuracy.  
-Users should act at their own discretion.  
-This page follows advertising guidelines and avoids misleading claims.
-</p>
-
-</div>
-
-</div>
-
-<script>
-
-let timeLeft = 30;
-let leadTracked = false;
-
-const countdown = document.getElementById("countdown");
-
-const timer = setInterval(() => {
-timeLeft--;
-countdown.innerText = timeLeft;
-
-if(timeLeft === 5 && !leadTracked){
-   fbq('track', 'Lead', {
-     content_name: 'Telegram Join',
-     value: 1,
-     currency: 'INR'
-   });
-   leadTracked = true;
-}
-
-if(timeLeft < 0){
-clearInterval(timer);
-window.location.href = "https://t.me/+BZMHSu-IhjFlZjll";
-}
-},1000);
-
-/* TRACKING */
-function trackLead(){
-if(!leadTracked){
-fbq('track', 'Lead', {
-  content_name: 'Telegram Join',
-  value: 1,
-  currency: 'INR'
-});
-leadTracked = true;
-}
-}
-
-document.getElementById("btn1").onclick = trackLead;
-document.getElementById("btn2").onclick = trackLead;
-
-</script>
 
 </body>
 </html>
